@@ -16,10 +16,11 @@ let header1 = document.createElement("header");
     header1.textContent = "Kata 1";
     document.body.appendChild(header1);
 function kata1() {
+    let newArr = gotCitiesCSV.split(",");
     let newElement = document.createElement("div");
-    newElement.textContent = JSON.stringify(gotCitiesCSV);
+    newElement.textContent = JSON.stringify(newArr);
     document.body.appendChild(newElement)
-    return gotCitiesCSV;
+    return newArr
 }
 showResults(kata1())
 
@@ -28,10 +29,11 @@ let header2 = document.createElement("header");
     header2.textContent = "Kata 2";
     document.body.appendChild(header2);
 function kata2() {
+    let newArr = bestThing.split(" ");
     let newElement = document.createElement("div");
-    newElement.textContent = JSON.stringify(bestThing);
+    newElement.textContent = JSON.stringify(newArr);
     document.body.appendChild(newElement)
-    return bestThing;  
+    return newArr;  
 }
 showResults(kata2())
 
